@@ -73,6 +73,7 @@ def send_chat_stream(messages, client_config=None, **kwargs) -> Generator[str, N
             model=client_config.get("model", "anthropic/claude-3.5-sonnet"),
             messages=messages,
             stream=True,
+            max_tokens=500,  # Limit tokens to reduce cost
             **kwargs
         )
         
