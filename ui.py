@@ -483,11 +483,11 @@ def render_top_tabs(active_page: str):
 # ------------------------
 def page_home(ctx):
     st.markdown("""
-        <div class='main-header' style='border-radius: 100px;'>
+        <div class='main-header' style='border-radius: 20px;'>
             <h1 style='font-size: 48px; font-weight: 800; margin-bottom: 10px;'>🏥 MediGuideAI</h1>
-            <p style='font-size: 18px; opacity: 0.9;'><b>MediGuideAI</b> is an advanced AI-powered healthcare assistant designed to help you understand your symptoms, predict potential diseases, and receive personalized health guidance—all in one place.
+            <p style='font-size: 16px; opacity: 0.9;'><b>MediGuideAI</b> is an advanced AI-powered healthcare assistant designed to help you understand your symptoms, predict potential diseases, and receive personalized health guidance—all in one place.
 With smart machine learning models and natural language processing, MediGuideAI analyzes your inputs and provides meaningful medical insights within seconds.</p>
-            <p style='font-size: 18px; opacity: 0.9;'>Whether you are experiencing discomfort, tracking your daily health, or simply curious about your well-being, MediGuideAI guides you toward better health decisions through early detection, preventive advice, and interactive support.</p>
+            <p style='font-size: 16px; opacity: 0.9;'>Whether you are experiencing discomfort, tracking your daily health, or simply curious about your well-being, MediGuideAI guides you toward better health decisions through early detection, preventive advice, and interactive support.</p>
         </div>
     """, unsafe_allow_html=True)
     
@@ -497,11 +497,11 @@ With smart machine learning models and natural language processing, MediGuideAI 
         div.stButton > button {
             background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%) !important;
             color: white !important;
-            font-size: 18px !important;
+            font-size: 16px !important;
             font-weight: 700 !important;
-            padding: 15px 30px !important;
+            padding: 12px 24px !important;
             border: none !important;
-            border-radius: 12px !important;
+            border-radius: 100px !important;
             box-shadow: 0 10px 30px rgba(17, 153, 142, 0.4) !important;
             transition: all 0.3s ease !important;
         }
@@ -514,7 +514,7 @@ With smart machine learning models and natural language processing, MediGuideAI 
     
     st.markdown("<h2 style='text-align: center; color: var(--primary); margin: 30px 0;'>⭐ Why Use MediGuideAI?</h2>", unsafe_allow_html=True)
     
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2, gap="small")
     
     with col1:
         st.markdown("""
@@ -576,7 +576,7 @@ With smart machine learning models and natural language processing, MediGuideAI 
     
     st.markdown("---")
     st.markdown("### 📊 Health Dashboard Overview")
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3, col4 = st.columns(4, gap="medium")
     
     with col1:
         st.markdown("""
@@ -612,7 +612,7 @@ With smart machine learning models and natural language processing, MediGuideAI 
     
     # Quick Access Cards
     st.markdown("### 🚀 Quick Access")
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(3, gap="medium")
     
     with col1:
         st.markdown("""
@@ -670,13 +670,13 @@ With smart machine learning models and natural language processing, MediGuideAI 
 
 def page_symptom_checker(ctx):
     st.markdown("""
-        <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 40px; border-radius: 200px; text-align: center; margin-bottom: 30px; box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);'>
+        <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 40px; border-radius: 20px; text-align: center; margin-bottom: 30px; box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);'>
             <h1 style='color: white; font-size: 42px; margin: 0;'>🩺 Symptom Checker</h1>
             <p style='color: #f0f4ff; font-size: 18px; margin-top: 10px;'>AI-powered symptom analysis with rule-based validation</p>
         </div>
     """, unsafe_allow_html=True)
     
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2, gap="medium")
     
     with col1:
         st.markdown("""
@@ -788,11 +788,11 @@ def page_symptom_checker(ctx):
         div.stButton > button {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
             color: white !important;
-            font-size: 20px !important;
+            font-size: 16px !important;
             font-weight: 700 !important;
-            padding: 15px 30px !important;
+            padding: 12px 24px !important;
             border: none !important;
-            border-radius: 12px !important;
+            border-radius: 100px !important;
             box-shadow: 0 10px 30px rgba(245, 87, 108, 0.4) !important;
             transition: all 0.3s ease !important;
         }
@@ -873,7 +873,7 @@ def page_symptom_checker(ctx):
         </div>
     """, unsafe_allow_html=True)
     
-    col_a, col_b = st.columns(2)
+    col_a, col_b = st.columns(2, gap="medium")
     with col_a:
         st.markdown("""
             <div style='background: white; padding: 15px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-bottom: 10px;'>
@@ -1094,7 +1094,7 @@ Be thorough but remind users to consult healthcare professionals."""
 
 def page_find_care(ctx):
     st.markdown("""
-        <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 50px 40px; border-radius: 50px; text-align: center; margin-bottom: 30px; box-shadow: 0 20px 60px rgba(102, 126, 234, 0.5);'>
+        <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 50px 40px; border-radius: 20px; text-align: center; margin-bottom: 30px; box-shadow: 0 20px 60px rgba(102, 126, 234, 0.5);'>
             <h1 style='color: white; font-size: 48px; margin: 0; text-shadow: 2px 2px 8px rgba(0,0,0,0.2);'>🏥 Emergency Care Locator</h1>
             <p style='color: rgba(255,255,255,0.95); font-size: 20px; margin-top: 15px; font-weight: 300;'>Fast access to life-saving medical services near you</p>
         </div>
@@ -1102,10 +1102,10 @@ def page_find_care(ctx):
     
     # Emergency Alert Banner
     st.markdown("""
-        <div style='background: linear-gradient(135deg, #ff0844 0%, #ffb199 100%); padding: 2px 30px; border-radius: 50px; box-shadow: 0 15px 45px rgba(255, 8, 68, 0.4); margin-bottom: 30px; border: 3px solid rgba(255,255,255,0.3);'>
+        <div style='background: linear-gradient(135deg, #ff0844 0%, #ffb199 100%); padding: 2px 30px; border-radius: 20px; box-shadow: 0 15px 45px rgba(255, 8, 68, 0.4); margin-bottom: 30px; border: 3px solid rgba(255,255,255,0.3);'>
             <div style='text-align: center;'>
                 <h2 style='color: white; margin: 0; font-size: 32px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2);'>🚨 LIFE-THREATENING EMERGENCY?</h2>
-                <div style='background: rgba(255,255,255,0.25); padding: 10px 10px; border-radius: 100px; margin: 20px 0; backdrop-filter: blur(10px);'>
+                <div style='background: rgba(255,255,255,0.25); padding: 10px 10px; border-radius: 20px; margin: 20px 0; backdrop-filter: blur(10px);'>
                     <p style='color: white; font-size: 18px; margin: 0 0 10px 0; font-weight: 600;'>CALL IMMEDIATELY:</p>
                     <h1 style='color: white; font-size: 72px; margin: 10px 0; text-shadow: 3px 3px 6px rgba(0,0,0,0.3); letter-spacing: 8px;'>112 / 911</h1>
                     <p style='color: white; font-size: 16px; margin: 10px 0 0 0; opacity: 0.95;'>⚡ Don't wait • Don't drive yourself • Help is on the way</p>
@@ -1119,11 +1119,11 @@ def page_find_care(ctx):
             div.stButton > button {
                 background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%) !important;
                 color: white !important;
-                font-size: 18px !important;
+                font-size: 16px !important;
                 font-weight: 700 !important;
-                padding: 15px 30px !important;
+                padding: 12px 24px !important;
                 border: none !important;
-                border-radius: 12px !important;
+                border-radius: 100px !important;
                 box-shadow: 0 10px 30px rgba(67, 233, 123, 0.4) !important;
                 transition: all 0.3s ease !important;
             }
@@ -1148,10 +1148,10 @@ def page_find_care(ctx):
         input[aria-label="📍 Enter your location"] {
             background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%) !important;
             border: 2px solid #3b82f6 !important;
-            border-radius: 5px !important;
-            padding: 15px 20px !important;
+            border-radius: 8px !important;
+            padding: 12px 24px !important;
             font-size: 16px !important;
-            font-weight: 500 !important;
+            font-weight: 700 !important;
             color: #1e3a8a !important;
             box-shadow: 0 4px 15px rgba(59, 130, 246, 0.2) !important;
             transition: all 0.3s ease !important;
@@ -1180,7 +1180,7 @@ def page_find_care(ctx):
     # Service Cards Grid
     st.markdown("<div style='margin: 30px 0;'></div>", unsafe_allow_html=True)
     
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(3, gap="medium")  # Options: small, medium, large
     
     with col1:
         st.markdown("""
@@ -1190,6 +1190,7 @@ def page_find_care(ctx):
                 <p style='color: rgba(255,255,255,0.9); font-size: 14px; margin: 10px 0;'>24/7 emergency rooms & specialized care centers</p>
             </div>
         """, unsafe_allow_html=True)
+        st.write("")
         if st.button("🔍 Find Hospitals", key="btn_hospital", use_container_width=True):
             loc = location if location else 'me'
             st.markdown(f"[🏥 View Hospitals on Google Maps](https://www.google.com/maps/search/hospital+emergency+near+{loc})")
@@ -1202,6 +1203,7 @@ def page_find_care(ctx):
                 <p style='color: rgba(255,255,255,0.9); font-size: 14px; margin: 10px 0;'>Emergency medical transport & paramedic services</p>
             </div>
         """, unsafe_allow_html=True)
+        st.write("")
         if st.button("🔍 Find Ambulance", key="btn_ambulance", use_container_width=True):
             st.markdown(f"[🚑 View Ambulance Services]({ambulance_map_link(location)})")
     
@@ -1213,6 +1215,7 @@ def page_find_care(ctx):
                 <p style='color: rgba(255,255,255,0.9); font-size: 14px; margin: 10px 0;'>24-hour pharmacies & prescription services</p>
             </div>
         """, unsafe_allow_html=True)
+        st.write("")
         if st.button("🔍 Find Pharmacies", key="btn_pharmacy", use_container_width=True):
             loc = location if location else 'me'
             st.markdown(f"[💊 View Pharmacies on Google Maps](https://www.google.com/maps/search/24+hour+pharmacy+near+{loc})")
@@ -1220,7 +1223,7 @@ def page_find_care(ctx):
     st.markdown("<div style='margin: 30px 0;'></div>", unsafe_allow_html=True)
     
     # Additional Services Row
-    col4, col5, col6 = st.columns(3)
+    col4, col5, col6 = st.columns(3, gap="medium")
     
     with col4:
         st.markdown("""
@@ -1230,6 +1233,7 @@ def page_find_care(ctx):
                 <p style='color: #555; font-size: 13px; margin: 8px 0;'>Walk-in clinics for non-life-threatening issues</p>
             </div>
         """, unsafe_allow_html=True)
+        st.write("")
         if st.button("🔍 Find Urgent Care", key="btn_urgent", use_container_width=True):
             loc = location if location else 'me'
             st.markdown(f"[🩺 View Urgent Care Centers](https://www.google.com/maps/search/urgent+care+near+{loc})")
@@ -1242,6 +1246,7 @@ def page_find_care(ctx):
                 <p style='color: #555; font-size: 13px; margin: 8px 0;'>Emergency dental care & pain relief</p>
             </div>
         """, unsafe_allow_html=True)
+        st.write("")
         if st.button("🔍 Find Dentists", key="btn_dental", use_container_width=True):
             loc = location if location else 'me'
             st.markdown(f"[🦷 View Emergency Dentists](https://www.google.com/maps/search/emergency+dentist+near+{loc})")
@@ -1254,6 +1259,7 @@ def page_find_care(ctx):
                 <p style='color: #555; font-size: 13px; margin: 8px 0;'>Crisis centers & counseling services</p>
             </div>
         """, unsafe_allow_html=True)
+        st.write("")
         if st.button("🔍 Find Support", key="btn_mental", use_container_width=True):
             loc = location if location else 'me'
             st.markdown(f"[🧠 View Mental Health Services](https://www.google.com/maps/search/mental+health+crisis+center+near+{loc})")
@@ -1328,11 +1334,11 @@ def page_drugs(ctx):
         div.stButton > button {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
             color: white !important;
-            font-size: 18px !important;
+            font-size: 16px !important;
             font-weight: 700 !important;
-            padding: 15px 30px !important;
+            padding: 12px 24px !important;
             border: none !important;
-            border-radius: 12px !important;
+            border-radius: 100px !important;
             box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4) !important;
             transition: all 0.3s ease !important;
         }
@@ -1409,7 +1415,7 @@ def page_drugs(ctx):
             """, unsafe_allow_html=True)
             
             # Main information in columns
-            col1, col2 = st.columns(2)
+            col1, col2 = st.columns(2, gap="medium")
             
             with col1:
                 st.markdown("""
@@ -1443,7 +1449,7 @@ def page_drugs(ctx):
             
             # Footer with external links
             st.markdown("---")
-            col_a, col_b, col_c = st.columns(3)
+            col_a, col_b, col_c = st.columns(3, gap="medium")
             with col_a:
                 st.markdown(f"**[📚 PubMed Research](https://pubmed.ncbi.nlm.nih.gov/?term={drug['name']})**")
             with col_b:
@@ -1471,11 +1477,11 @@ def page_selfcare(ctx):
         div.stButton > button {
             background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%) !important;
             color: white !important;
-            font-size: 18px !important;
+            font-size: 16px !important;
             font-weight: 700 !important;
-            padding: 15px 30px !important;
+            padding: 12px 24px !important;
             border: none !important;
-            border-radius: 12px !important;
+            border-radius: 100px !important;
             box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4) !important;
             transition: all 0.3s ease !important;
         }
@@ -1487,7 +1493,7 @@ def page_selfcare(ctx):
     """, unsafe_allow_html=True)
     
     # Category Cards
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3, col4 = st.columns(4, gap="medium")
     
     with col1:
         st.markdown("""
@@ -1534,7 +1540,7 @@ def page_selfcare(ctx):
         </div>
     """, unsafe_allow_html=True)
     
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2, gap="medium")
     
     with col1:
         st.markdown("""
@@ -1631,7 +1637,7 @@ def page_selfcare(ctx):
         </div>
     """, unsafe_allow_html=True)
     
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(3, gap="medium")
     
     with col1:
         st.markdown("""
@@ -1720,7 +1726,7 @@ def page_selfcare(ctx):
 
 def page_ai_chat(ctx):
     st.markdown("""
-        <div style='background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); padding: 30px; border-radius: 200px; text-align: center; margin-bottom: 20px; box-shadow: 0 15px 35px rgba(250, 112, 154, 0.4);'>
+        <div style='background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 20px; box-shadow: 0 15px 35px rgba(250, 112, 154, 0.4);'>
             <h1 style='color: white; font-size: 36px; margin: 0;'>🤖 AI Medical Assistant</h1>
             <p style='color: white; font-size: 16px; margin-top: 8px;'>24/7 AI-powered health chat support</p>
         </div>
@@ -1888,7 +1894,7 @@ def page_ai_chat(ctx):
 
 def page_about(ctx):
     st.markdown("""
-        <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 50px 40px; border-radius: 50px; text-align: center; margin-bottom: 30px; box-shadow: 0 20px 60px rgba(102, 126, 234, 0.5);'>
+        <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 50px 40px; border-radius: 20px; text-align: center; margin-bottom: 30px; box-shadow: 0 20px 60px rgba(102, 126, 234, 0.5);'>
             <h1 style='color: white; font-size: 48px; margin: 0; text-shadow: 2px 2px 8px rgba(0,0,0,0.2);'>ℹ️ About MediGuideAI</h1>
             <p style='color: rgba(255,255,255,0.95); font-size: 20px; margin-top: 15px; font-weight: 300;'>Your trusted AI-powered health companion</p>
         </div>
@@ -1934,11 +1940,11 @@ def page_about(ctx):
         div.stButton > button {
             background: linear-gradient(135deg, #fa709a 0%, #fee140 100%) !important;
             color: white !important;
-            font-size: 18px !important;
+            font-size: 16px !important;
             font-weight: 700 !important;
-            padding: 15px 30px !important;
+            padding: 12px 24px !important;
             border: none !important;
-            border-radius: 12px !important;
+            border-radius: 100px !important;
             box-shadow: 0 10px 30px rgba(250, 112, 154, 0.4) !important;
             transition: all 0.3s ease !important;
         }
@@ -1950,7 +1956,7 @@ def page_about(ctx):
     """, unsafe_allow_html=True)
     
     # Mission & Vision Cards
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2, gap="medium")  # Options: small, medium, large
     
     with col1:
         st.markdown("""
@@ -1993,7 +1999,7 @@ def page_about(ctx):
         </div>
     """, unsafe_allow_html=True)
     
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(3, gap="medium")  # Adjust: small, medium, large
     
     with col1:
         st.markdown("""
@@ -2031,7 +2037,7 @@ def page_about(ctx):
         </div>
     """, unsafe_allow_html=True)
     
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns(2, gap="medium")
     
     with col1:
         st.markdown("""
