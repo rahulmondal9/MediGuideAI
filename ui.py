@@ -1065,7 +1065,7 @@ Be thorough but remind users to consult healthcare professionals."""
                             ]
                             
                             response_text = ""
-                            for chunk in send_chat_stream(msgs, client_config=client):
+                            for chunk in send_chat_stream(msgs, client):
                                 response_text += chunk
                             
                             st.markdown(f"""
@@ -1871,7 +1871,7 @@ def page_ai_chat(ctx):
                         })
                     
                     response = ""
-                    for chunk in send_chat_stream(messages, client_config=client):
+                    for chunk in send_chat_stream(messages, client):
                         response += chunk
                     
                     st.session_state.ai_chat_history.append({
