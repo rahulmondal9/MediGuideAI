@@ -1,7 +1,7 @@
 # .streamlit/config.toml
 [theme]
-primaryColor = "#0b6b67"
-backgroundColor = "#f0fdfa"
+primaryColor = "#96cbeeff"
+backgroundColor = "#9bb1b0ff"
 secondaryBackgroundColor = "#ffffff"
 textColor = "#134e4a"
 font = "sans serif"
@@ -15,7 +15,7 @@ wideMode = true
 
 # Optional: Set default viewing mode
 [runner]
-magicEnabled = false
+magicEnabled = true
 
 # Optional: Server settings
 [server]
